@@ -534,7 +534,7 @@ var SuitApi = function() {
             };
             internal.connect = function(selector, event, cb) {
                 if (selector instanceof Array) {
-                    selector.each(function(num, subselector) {
+                    $(selector).each(function(num, subselector) {
                         suit.connect(internal.self, event, subselector, cb);
                     })
                 } else {
