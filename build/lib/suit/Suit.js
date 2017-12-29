@@ -356,9 +356,7 @@ var SuitFilters = function() {
             for (k in variable) counter++;
             return counter;
         }
-        if (typeof(variable) == "array") {
-            return variable.length;
-        }
+       
         return variable == null ? 0 : this.int2str(variable).length
     };
 
